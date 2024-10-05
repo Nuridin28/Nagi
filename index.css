@@ -1,0 +1,276 @@
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+body {
+    margin: 0;
+    font-family: "Kanit";
+    background-color: #F1F1F1;
+}
+.container {
+    padding: 0 80px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+.btn-primary {
+    background-color: #E1DEE7;
+    padding: 10px 12px;
+    border-radius: 100px;
+    border:0;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.btn-primary:hover {
+    transform: scale(1.1);
+    background-color: #6d6d6df2;
+}
+.btn {
+    background-color: #712FFF;
+    color:#FFF;
+    padding: 16px 24px;
+    border-radius: 100px;
+    border:0;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    font-family: 'Inter';
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #3d07b2;
+}
+.df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    padding: 20px 0;
+}
+.header ul{
+    font-family: 'Inter';
+    display: flex;
+    gap: 16px;
+    align-items:center; 
+}
+.header nav {
+    display: flex;
+    align-items:center;
+    gap: 16px;
+}
+.header .logotype {
+    gap: 10px;
+    display: flex;
+    font-weight: 500;
+    font-size: 1.125em;
+}
+.logotype a {
+    display: flex;
+    align-items:center;
+}
+
+.hero {
+    padding: 100px 0px;
+}
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.hero-info {
+    width: 30%;
+}
+.hero-img {
+    position: relative;
+}
+.abs1 {
+    position: absolute;
+    top: 4%;
+    left: 35%; 
+    max-width: 50%;
+    max-height: 50%;
+}
+.abs2 {
+    position: absolute;
+    top: 50%;
+    left: 74%;
+    max-width: 50%;
+    max-height: 50%;
+}
+.hero-info .btn {
+    margin-top: 48px;
+}
+.title {
+    font-size: 3em;
+    line-height: 64px;
+    font-weight: bold;
+}
+.text {
+    margin-top: 24px;
+    font-size: 1em;
+    font-family: 'Inter';
+
+}
+.hero-img img {
+    border-radius: 32px;
+}
+.how-it-works{
+    padding: 100px 0px;
+    background-color: #E1DEE7;
+    border-radius:32px;
+}
+.block-title {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.descr {
+    font-family: 'Inter';
+}
+.card-wrapper {
+    margin-top: 86px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+    gap: 120px;
+}
+.subtitle {
+    margin-top: 48px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.get-started {
+    padding: 100px 0;
+}
+.search {
+    display: flex;
+    align-items:center;
+    gap: 32px;
+    position: relative;
+}
+.search-img {
+    position: absolute;
+    left: 1%;
+}
+.inp {
+    border-radius:12px;
+    border: 0;
+    padding: 14px 50px;
+    width: 40%;
+}
+.upload-btn {
+    width: 15%;
+}
+
+.cv-form-wrapper {
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cvImg {
+    border-radius:32px;
+}
+
+.form-info {
+    width: 40%;
+}
+.form-img{
+    position: relative;
+}
+.abs3 {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+.abs4 {
+    left: 40%;
+    top: 5%;
+    position: absolute;
+}
+
+.menu {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+.menu ul {
+    display: flex;
+    gap: 16px;
+    align-items:center;
+    font-family: 'Inter';
+}
+.menu ul a{
+    display: flex;
+    align-items:center;
+}
+.footer {
+    padding: 32px 0;
+    background-color: #fff;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+.footer-text {
+    color:#838284d2;
+    font-family: 'Inter';
+}
+
+.made-by {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Inter';
+}
+
+.menu li:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1080px) {
+    .hero-wrapper {
+        flex-direction: column-reverse;
+    }
+    .cv-form-wrapper {
+        flex-direction: column;
+    }
+    .hero-info {
+        width: 100%;
+        text-align: center;
+    }
+    .form-info{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding:0 24px;
+    }
+    .hero {
+        padding: 32px 0;
+    }
+    .hero-info {
+        margin-top: 54px;
+    }
+    .header ul {
+        display: none;
+    }
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
